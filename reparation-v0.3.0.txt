@@ -1,0 +1,2 @@
+Réparation de la version v0.3.0 — 24/10/2026 11:31 UTC
+Aucune version v0.3.0, pas même en brouillon : la publication s'est arrêtée avant l'envoi des fichiers (dépendances, tests ou construction).
