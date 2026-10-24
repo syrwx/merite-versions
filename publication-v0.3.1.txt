@@ -1,0 +1,94 @@
+Publication de la version v0.3.1 — 24/10/2026 11:40 UTC
+  dépendances       : success
+  étiquette         : success
+  tests             : success
+  construction      : success
+  brouillon         : success
+  fichiers produits : success
+  brouillon complet : success
+  publication       : success
+  vue de l'extérieur: success
+Produit dans dist/ :
+  Merite-Portable-0.3.1.exe
+  Merite-Setup-0.3.1.exe
+  Merite-Setup-0.3.1.exe.blockmap
+  builder-debug.yml
+  latest.yml
+--- dependances (fin du journal) ---
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated boolean@3.2.0: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
+added 400 packages, and audited 401 packages in 2m
+
+66 packages are looking for funding
+  run `npm fund` for details
+
+9 vulnerabilities (2 moderate, 5 high, 2 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+--- tests (fin du journal) ---
+[90mstdout[2m | src/main/services/eleves.test.ts[2m > [22m[2mcréation[2m > [22m[2mdit de qui est le matricule déjà pris, plutôt que « UNIQUE constraint failed »
+[22m[39m[Mérite] copie de sûreté avant migration impossible : Error: EEXIST: file already exists, mkdir 'C:\Users\RUNNER~1\AppData\Local\Temp\merite-test-TeCsPy\backups'
+[2m Test Files [22m [1m[32m48 passed[39m[22m[2m | [22m[33m2 skipped[39m[90m (50)[39m
+[2m      Tests [22m [1m[32m821 passed[39m[22m[2m | [22m[33m9 skipped[39m[90m (830)[39m
+--- construction (fin du journal) ---
+
+[36mvite v7.3.6 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+[32m✓[39m 69 modules transformed.
+rendering chunks...
+[2mout/main/[22m[36mindex.js  [39m[1m[2m331.24 kB[22m[1m[22m
+[32m✓ built in 1.07s[39m
+[36mvite v7.3.6 [32mbuilding ssr environment for production...[36m[39m
+transforming...
+[32m✓[39m 1 modules transformed.
+rendering chunks...
+[2mout/preload/[22m[36mindex.js  [39m[1m[2m8.96 kB[22m[1m[22m
+[32m✓ built in 44ms[39m
+[36mvite v7.3.6 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1932 modules transformed.
+rendering chunks...
+[2m../../out/renderer/[22m[32mindex.html                                                      [39m[1m[2m    0.83 kB[22m[1m[22m
+[2m../../out/renderer/[22m[32massets/plus-jakarta-sans-vietnamese-wght-normal-qRpaaN48.woff2  [39m[1m[2m    8.35 kB[22m[1m[22m
+[2m../../out/renderer/[22m[32massets/ecusson-merite-r0I_jJz3.jpeg                             [39m[1m[2m   17.24 kB[22m[1m[22m
+[2m../../out/renderer/[22m[32massets/plus-jakarta-sans-latin-ext-wght-normal-DmpS2jIq.woff2   [39m[1m[2m   21.73 kB[22m[1m[22m
+[2m../../out/renderer/[22m[32massets/plus-jakarta-sans-latin-wght-normal-eXO_dkmS.woff2       [39m[1m[2m   27.35 kB[22m[1m[22m
+[2m../../out/renderer/[22m[35massets/index-DskFEdXu.css                                       [39m[1m[2m  114.78 kB[22m[1m[22m
+[2m../../out/renderer/[22m[36massets/index-C8GD3Buy.js                                        [39m[1m[33m1,129.39 kB[39m[22m
+[32m✓ built in 4.66s[39m
+--- electron-builder (fin du journal) ---
+  • packaging       platform=win32 arch=x64 electron=43.7.1 appOutDir=dist\win-unpacked
+  • downloaded      label=electron progress=100%
+  • downloaded electron zip extracted successfully  output=D:\a\merite\merite\dist\win-unpacked
+  • searching for node modules  pm=npm searchDir=D:\a\merite\merite
+  • updating asar integrity executable resource  executablePath=dist\win-unpacked\Mérite.exe
+  • signing with signtool.exe  path=dist\win-unpacked\Mérite.exe
+  • building        target=nsis file=dist\Merite-Setup-0.3.1.exe archs=x64 oneClick=false perMachine=false
+  • downloaded      label=nsis-3.0.4.1.7z progress=100%
+  • downloaded      label=7zip-win-x64.tar.gz progress=100%
+  • signing with signtool.exe  path=dist\win-unpacked\resources\elevate.exe
+  • downloaded      label=nsis-resources-3.4.1.7z progress=100%
+  • signing with signtool.exe  path=dist\Merite-Setup-0.3.1.__uninstaller.exe
+  • signing with signtool.exe  path=dist\Merite-Setup-0.3.1.exe
+  • building block map  blockMapFile=dist\Merite-Setup-0.3.1.exe.blockmap
+  • building        target=portable file=dist\Merite-Portable-0.3.1.exe archs=x64
+  • GitHub provider release type is set to draft  reason=env EP_DRAFT is set to true
+  • publishing      publisher=Github (owner: syrwx, project: merite-versions, version: 0.3.1)
+  • GitHub provider release type is set to draft  reason=env EP_DRAFT is set to true
+  • publishing      publisher=Github (owner: syrwx, project: merite-versions, version: 0.3.1)
+  • uploading       file=Merite-Setup-0.3.1.exe.blockmap provider=github
+  • uploading       file=Merite-Setup-0.3.1.exe provider=github
+  • creating GitHub release  reason=release doesn't exist tag=v0.3.1 version=0.3.1
+  • creating GitHub release  reason=release doesn't exist tag=v0.3.1 version=0.3.1
+  • signing with signtool.exe  path=dist\Merite-Portable-0.3.1.exe
+  • uploading       file=Merite-Portable-0.3.1.exe provider=github
